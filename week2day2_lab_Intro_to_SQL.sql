@@ -1,0 +1,10 @@
+USE sakila;
+SELECT * FROM address;
+SELECT * FROM actor;
+SELECT * FROM film;
+SELECT * FROM customer;
+SELECT distinct(title) as film_title FROM film;
+SELECT distinct(name) as language FROM language;
+SELECT count(distinct(store_id)) as number_of_stores FROM store;
+SELECT count(distinct(staff_id)) as number_of_employees FROM staff;
+SELECT distinct(first_name) as employee_first_name FROM staff;
